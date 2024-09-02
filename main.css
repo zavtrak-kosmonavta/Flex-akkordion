@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+.slider{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.item{
+    flex-basis: 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 0.8s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 5rem;
+    color: rgb(176, 0, 207);
+    text-shadow: rgba(142,18,204,0.52) 22px 16px 20px;
+}
+.item-1{background-image: url(img/landscape-ocean-shore-water-environment-1488703.jpg);}
+.item-2{background-image: url(img/Nature___Seasons___Summer_Summer_flowers_on_a_ferris_wheel_078222_.jpg);}
+.item-3{background-image: url(img/orig.webp);}
+.item-4{background-image: url(img/priroda-gory-leto-svet-solnca.jpg);}
+
+.item:hover{ flex-basis: 100%;}
+
+@media (max-width: 800px){
+    .slider{flex-direction: column;
+    height: 100vh;}
+}
